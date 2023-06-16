@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
+    //
+
     public void onReceiveOrder(OrderModel orderModel, int position) {
         modelRunnableMap.forEach((o, r) -> {
             if (o.getId() == orderModel.getId()) {
